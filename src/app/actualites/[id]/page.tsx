@@ -60,7 +60,7 @@ export default function Actus() {
     
                     <div className="my-24 w-full flex flex-col items-center">
                         <div className='flex justify-center mb-8'>
-                            {postState.photo && (
+                            {postState && postState.photo && (
                                 <Image
                                     src={`http://localhost:8000/build/images/${postState.photo}`}
                                     alt="Photo actu"
