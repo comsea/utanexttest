@@ -6,11 +6,19 @@ import Image from 'next/image';
 import HeaderActu from "../HeaderActu";
 import parse from 'html-react-parser';
 
+interface PostState {
+    photo: string | null;
+    titre_actu: string;
+    date_actu: string;
+    description_actu: string;
+    image: string[];
+}
+
 export default function Actus() {
 
     const { id } = useParams();
     const [isLoading, setIsLoading] = useState(true);
-    const [postState, setPostState] = useState([]);
+    const [postState, setPostState] = useState<PostState | null>(null);
     const [images, setImages] = useState([]);
 
     useEffect(() => {
@@ -60,7 +68,7 @@ export default function Actus() {
     
                     <div className="my-24 w-full flex flex-col items-center">
                         <div className='flex justify-center mb-8'>
-                            {postState && postState.photo && (
+                            {postState.photo && (
                                 <Image
                                     src={`http://localhost:8000/build/images/${postState.photo}`}
                                     alt="Photo actu"
