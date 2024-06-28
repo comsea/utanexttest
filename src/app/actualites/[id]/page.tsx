@@ -41,7 +41,7 @@ export default function Actus() {
 
     console.log(images);
 
-    const formatDate = (isoDate) => {
+    const formatDate = (isoDate: string) => {
         const dateObj = new Date(isoDate);
         const day = dateObj.getDate().toString().padStart(2, '0');
         const month = (dateObj.getMonth() + 1).toString().padStart(2, '0');
