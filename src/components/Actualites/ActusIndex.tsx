@@ -5,14 +5,22 @@ import Image from 'next/image';
 import Arrow from '@/assets/images/Actus/arrow.svg'; 
 import Link from 'next/link';
 
-const ActusIndex: React.FC = () => {
-    const [actualite, setActualite] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
+interface Actualite {
+    id: number;
+    date_actu: string;
+    titre_actu: string;
+    description_actu: string;
+    photo: string;
+}
 
-    useEffect(()=> {
+const ActusIndex: React.FC = () => {
+    const [actualite, setActualite] = useState<Actualite[]>([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
         fetch("http://localhost:8000/api/actualites").then((response) => response.json()).then((result) => {
-            const fetchedActualites = result['hydra:member'];
-            fetchedActualites.sort((a, b) => (new Date(b.date_actu).getTime() - new Date(a.date_actu).getTime()));
+            const fetchedActualites: Actualite[] = result['hydra:member'];
+            fetchedActualites.sort((a: Actualite, b: Actualite) => (new Date(b.date_actu).getTime() - new Date(a.date_actu).getTime()));
             const limitedActualites = fetchedActualites.slice(0, 3);
             setActualite(limitedActualites);
             setIsLoading(false);
@@ -20,7 +28,7 @@ const ActusIndex: React.FC = () => {
         .catch((error) => {
             console.error(error);
         });
-    }, [])
+    }, []);
 
     const formatDate = (isoDate: string) => {
         const dateObj = new Date(isoDate);
