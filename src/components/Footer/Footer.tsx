@@ -11,12 +11,12 @@ export default function Footer() {
         <div className="w-full bg-customBlue mt-8" id="contact">
             <div className='flex p-8 lg:p-20 lg:mx-[10%]'>
                 <div className='flex flex-col'>
-                    <Image src={Logo} alt="Logo UTA" className='w-[50%] lg:w-[50%] mb-4'></Image>
+                    <Image src="images/Footer/Logo.svg" alt="Logo UTA" className='w-[50%] lg:w-[50%] mb-4'></Image>
 
                     <div className="flex flex-col space-y-4 text-sm lg:text-base">
                         <div className="flex flex-col">
                             <div className='flex flex-row space-x-4'>
-                                <Image src={Mail} alt="Icône e-mail" className='lg:w-14 w-8'></Image>
+                                <Image src="images/footer/mail.svg" alt="Icône e-mail" className='lg:w-14 w-8'></Image>
                                 <div className='text-white'>
                                     <p className='font-bold'> E-mail </p>
                                     <p> uta-samg@utasamg.fr </p>
@@ -26,7 +26,7 @@ export default function Footer() {
 
                         <div className="flex flex-col">
                             <div className='flex flex-row space-x-4'>
-                                <Image src={Phone} alt="Icône e-mail" className='lg:w-14 w-8'></Image>
+                                <Image src="images/footer/phone.svg" alt="Icône e-mail" className='lg:w-14 w-8'></Image>
                                 <div className='text-white'>
                                     <p className='font-bold'> Téléphone </p>
                                     <p> 03 24 52 74 00 </p>
@@ -36,7 +36,7 @@ export default function Footer() {
 
                         <div className="flex flex-col">
                             <div className='flex flex-row space-x-4'>
-                                <Image src={Clock} alt="Icône e-mail" className='lg:w-14 w-8'></Image>
+                                <Image src="images/footer/clock.svg" alt="Icône e-mail" className='lg:w-14 w-8'></Image>
                                 <div className='text-white'>
                                     <p className='font-bold'> Horaires d&apos;ouverture </p>
                                     <p> Du lundi au jeudi : 7h-12h   13h30-17h </p>
@@ -47,7 +47,7 @@ export default function Footer() {
 
                         <div className="flex flex-col">
                             <div className='flex flex-row space-x-4'>
-                                <Image src={Location} alt="Icône e-mail" className='lg:w-14 w-8'></Image>
+                                <Image src="images/footer/location.svg" alt="Icône e-mail" className='lg:w-14 w-8'></Image>
                                 <div className='text-white'>
                                     <p className='font-bold'> Adresse </p>
                                     <p> Zone Industrielle </p>
@@ -59,12 +59,12 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='flex-col lg:block hidden'>
-                    <Image src={Map} alt="Map emplacement UTA"></Image>
+                    <Image src="images/footer/map.svg" alt="Map emplacement UTA"></Image>
                 </div>
             </div>
 
             <div className='flex flex-col lg:hidden'>
-                    <Image src={Map} alt="Map emplacement UTA"></Image>
+                    <Image src="images/footer/map.svg" alt="Map emplacement UTA"></Image>
             </div>
             
             <div className='flex justify-center items-center w-full bg-customPink p-4'>
