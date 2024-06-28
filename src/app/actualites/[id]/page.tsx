@@ -27,7 +27,7 @@ export default function Actus() {
     const [images, setImages] = useState<ImageType[]>([]);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/api/actualites/${id}`)
+        fetch(`https://apiuta.comsea.fr/api/actualites/${id}`)
             .then((response) => response.json())
             .then((result) => {
                 setPostState(result);
@@ -40,7 +40,7 @@ export default function Actus() {
     }, [id]);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/api/images`)
+        fetch(`https://apiuta.comsea.fr/api/images`)
             .then((response) => response.json())
             .then((result) => {
                 const fetchedImages = result['hydra:member'];
@@ -76,7 +76,7 @@ export default function Actus() {
                         <div className='flex justify-center mb-8'>
                             {postState.photo && (
                                 <Image
-                                    src={`http://localhost:8000/build/images/${postState.photo}`}
+                                    src={`https://apiuta.comsea.fr/build/images/${postState.photo}`}
                                     alt="Photo actu"
                                     width={400}
                                     height={400}
@@ -106,7 +106,7 @@ export default function Actus() {
                                     "/api/images/" + image.id === imagesPost && (
                                         <div key={image.id} className='relative w-full h-64 overflow-hidden rounded-lg transition-shadow duration-300'>
                                             <Image
-                                                src={`http://localhost:8000/build/images/${image.lien}`}
+                                                src={`https://apiuta.comsea.fr/build/images/${image.lien}`}
                                                 alt="Photo actu"
                                                 layout='fill'
                                                 objectFit='contain'

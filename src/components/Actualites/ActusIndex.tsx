@@ -18,7 +18,7 @@ const ActusIndex: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:8000/api/actualites").then((response) => response.json()).then((result) => {
+        fetch("https://apiuta.comsea.fr/api/actualites").then((response) => response.json()).then((result) => {
             const fetchedActualites: Actualite[] = result['hydra:member'];
             fetchedActualites.sort((a: Actualite, b: Actualite) => (new Date(b.date_actu).getTime() - new Date(a.date_actu).getTime()));
             const limitedActualites = fetchedActualites.slice(0, 3);
@@ -45,7 +45,7 @@ const ActusIndex: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mx-8 mt-8">
                     {isLoading ? 'Chargement en cours' : actualite.map(actu => (
                     <div key={actu.id} className="card bg-customGray drop-shadow-lg w-full max-w-sm">
-                        <Image src={`http://localhost:8000/build/images/${actu.photo}`} alt="Photo actualité" width={400} height={300} />
+                        <Image src={`https://apiuta.comsea.fr/build/images/${actu.photo}`} alt="Photo actualité" width={400} height={300} />
                         <div className="card-body">
                             <span className="text-sm lg:text-base">{formatDate(actu.date_actu)}</span>
                             <h2 className="text-xl lg:text-2xl font-bold text-black">{parse(actu.titre_actu)}</h2>
