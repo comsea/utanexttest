@@ -14,12 +14,17 @@ interface PostState {
     image: string[];
 }
 
+interface ImageType {
+    id: number;
+    lien: string;
+}
+
 export default function Actus() {
 
     const { id } = useParams();
     const [isLoading, setIsLoading] = useState(true);
     const [postState, setPostState] = useState<PostState | null>(null);
-    const [images, setImages] = useState([]);
+    const [images, setImages] = useState<ImageType[]>([]);
 
     useEffect(() => {
         fetch(`http://localhost:8000/api/actualites/${id}`)
