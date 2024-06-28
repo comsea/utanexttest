@@ -63,6 +63,7 @@ export default function Actus() {
             {isLoading ? (
                 <div>Chargement en cours</div>
             ) : (
+                postState &&
                 <div className='w-full flex flex-col items-center'>
                     <HeaderActu />
     
