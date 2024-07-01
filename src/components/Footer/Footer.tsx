@@ -1,22 +1,23 @@
 import Image from 'next/image';
 import Logo from '@/assets/images/Footer/Logo.svg';
-import Mail from "@/assets/images/footer/mail.svg";
-import Phone from "@/assets/images/footer/phone.svg";
-import Clock from "@/assets/images/footer/clock.svg";
-import Location from "@/assets/images/footer/location.svg";
-import Map from "@/assets/images/footer/map.svg";
+import Mail from "@/assets/images/Footer/mail.svg";
+import Phone from "@/assets/images/Footer/phone.svg";
+import Clock from "@/assets/images/Footer/clock.svg";
+import Location from "@/assets/images/Footer/location.svg";
+import Map from "@/assets/images/Footer/map.svg";
+
 
 export default function Footer() {
     return (
         <div className="w-full bg-customBlue mt-8" id="contact">
             <div className='flex p-8 lg:p-20 lg:mx-[10%]'>
                 <div className='flex flex-col'>
-                    <Image src="images/Footer/Logo.svg" alt="Logo UTA" className='w-[50%] lg:w-[50%] mb-4'></Image>
+                    <Image src={Logo} alt="Logo UTA" className='w-[50%] lg:w-[50%] mb-4'></Image>
 
                     <div className="flex flex-col space-y-4 text-sm lg:text-base">
                         <div className="flex flex-col">
                             <div className='flex flex-row space-x-4'>
-                                <Image src="images/footer/mail.svg" alt="Icône e-mail" className='lg:w-14 w-8'></Image>
+                                <Image src={Mail} alt="Icône e-mail" className='lg:w-14 w-8'></Image>
                                 <div className='text-white'>
                                     <p className='font-bold'> E-mail </p>
                                     <p> uta-samg@utasamg.fr </p>
@@ -26,7 +27,7 @@ export default function Footer() {
 
                         <div className="flex flex-col">
                             <div className='flex flex-row space-x-4'>
-                                <Image src="images/footer/phone.svg" alt="Icône e-mail" className='lg:w-14 w-8'></Image>
+                                <Image src={Phone} alt="Icône e-mail" className='lg:w-14 w-8'></Image>
                                 <div className='text-white'>
                                     <p className='font-bold'> Téléphone </p>
                                     <p> 03 24 52 74 00 </p>
@@ -36,7 +37,7 @@ export default function Footer() {
 
                         <div className="flex flex-col">
                             <div className='flex flex-row space-x-4'>
-                                <Image src="images/footer/clock.svg" alt="Icône e-mail" className='lg:w-14 w-8'></Image>
+                                <Image src={Clock} alt="Icône e-mail" className='lg:w-14 w-8'></Image>
                                 <div className='text-white'>
                                     <p className='font-bold'> Horaires d&apos;ouverture </p>
                                     <p> Du lundi au jeudi : 7h-12h   13h30-17h </p>
@@ -47,7 +48,7 @@ export default function Footer() {
 
                         <div className="flex flex-col">
                             <div className='flex flex-row space-x-4'>
-                                <Image src="images/footer/location.svg" alt="Icône e-mail" className='lg:w-14 w-8'></Image>
+                                <Image src={Location} alt="Icône e-mail" className='lg:w-14 w-8'></Image>
                                 <div className='text-white'>
                                     <p className='font-bold'> Adresse </p>
                                     <p> Zone Industrielle </p>
@@ -59,12 +60,12 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='flex-col lg:block hidden'>
-                    <Image src="images/footer/map.svg" alt="Map emplacement UTA"></Image>
+                    <Image src={Map} alt="Map emplacement UTA"></Image>
                 </div>
             </div>
 
             <div className='flex flex-col lg:hidden'>
-                    <Image src="images/footer/map.svg" alt="Map emplacement UTA"></Image>
+                    <Image src={Map} alt="Map emplacement UTA"></Image>
             </div>
             
             <div className='flex justify-center items-center w-full bg-customPink p-4'>
