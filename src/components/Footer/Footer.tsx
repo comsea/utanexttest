@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from '@/assets/images/Footer/Logo.svg';
+import Logo from '@/assets/images/Footer/logo.svg';
 import Mail from "@/assets/images/Footer/mail.svg";
 import Phone from "@/assets/images/Footer/phone.svg";
 import Clock from "@/assets/images/Footer/clock.svg";
