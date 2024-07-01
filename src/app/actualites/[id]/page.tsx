@@ -75,7 +75,7 @@ export default function Actus() {
                     <div className="my-24 w-full flex flex-col items-center">
                         <div className='flex justify-center mb-8'>
                             {postState.photo && (
-                                <Image
+                                <img
                                     src={`https://apiuta.comsea.fr/build/images/${postState.photo}`}
                                     alt="Photo actu"
                                     width={400}
@@ -105,11 +105,9 @@ export default function Actus() {
                                 images.map((image) => (
                                     "/api/images/" + image.id === imagesPost && (
                                         <div key={image.id} className='relative w-full h-64 overflow-hidden rounded-lg transition-shadow duration-300'>
-                                            <Image
+                                            <img
                                                 src={`https://apiuta.comsea.fr/build/images/${image.lien}`}
                                                 alt="Photo actu"
-                                                layout='fill'
-                                                objectFit='contain'
                                                 className='rounded-lg hover:scale-105 transition-transform duration-300'
                                             />
                                         </div>

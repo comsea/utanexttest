@@ -45,7 +45,7 @@ const ActusIndex: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mx-8 mt-8">
                     {isLoading ? 'Chargement en cours' : actualite.map(actu => (
                     <div key={actu.id} className="card bg-customGray drop-shadow-lg w-full max-w-sm">
-                        <Image src={`https://apiuta.comsea.fr/build/images/${actu.photo}`} alt="Photo actualité" width={400} height={300} />
+                        <img src={`https://apiuta.comsea.fr/build/images/${actu.photo}`} alt="Photo actualité" width={400} height={300} />
                         <div className="card-body">
                             <span className="text-sm lg:text-base">{formatDate(actu.date_actu)}</span>
                             <h2 className="text-xl lg:text-2xl font-bold text-black">{parse(actu.titre_actu)}</h2>
