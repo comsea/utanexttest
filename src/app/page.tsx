@@ -24,7 +24,8 @@ import Photo1 from "@/assets/images/Actus/photo1.svg";
 import Photo2 from "@/assets/images/Actus/photo2.svg";
 import Photo3 from "@/assets/images/Actus/photo3.svg";
 
-import Footer from "../components/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
+import Form from "@/components/Formulaire/Form";
 
 export const metadata: Metadata = {
   title: "UTA SAMG",
@@ -303,55 +304,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center drop-shadow-lg">
-        <div className="bg-customGray w-[90%] lg:w-[45%] justify-center flex py-4 lg:py-8">
-            <form action="assets/mail/mail.php" method="post"
-              className="lg:w-[85%] flex flex-col justify-center items-center space-y-4 mt-6 mx-6 lg:ml-11">
-              
-              <div className="w-full grid grid-cols-2 lg:gap-x-4 gap-x-4 gap-y-4">
-                  <div>
-                      <input type="text" name="nom" id="nom" className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2" 
-                          placeholder="Nom*"></input>
-                  </div>
-
-                  <div>
-                      <input type="text" name="mail" id="mail" className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2"
-                          placeholder="Adresse mail*"></input>
-                  </div>
-
-                  <div>
-                      <input type="text" name="phone" id="phone" className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2"
-                          placeholder="Téléphone"></input>
-                  </div>
-
-                  <div>
-                      <input type="text" name="sujet" id="sujet" className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2"
-                          placeholder="Sujet*"></input>
-                  </div>
-              </div>
-
-              <div className="w-full">
-                  <textarea name="message" id="message" className="text-sm lg:text-base bg-customLightGray w-full h-32 rounded py-1 px-2"
-                      placeholder="Message*"></textarea>
-              </div>
-
-              <div className="w-full flex flex-row space-x-4 items-start font-semibold">
-                  <input type="checkbox" name="validate" id="validate" className="bg-customGray mt-2"></input>
-                  <label className="text-black text-sm lg:text-base text-justify">En soumettant ce formulaire, j&apos;accepte que les informations
-                  saisies soient exploitées dans le cadre de la demande de contact et de la relation commerciale qui peut en découler.
-                  *Champs obligatoires </label>
-                  <input type="hidden" name="recaptcha-response" id="recaptchaResponse"></input>
-              </div>
-
-              <div className="flex flex-col">
-                <span className="text-black underline  text-sm lg:text-base text-justify">Ce site est protégé par reCAPTCHA et la Politique de Confidentialité et les Conditions d&apos;Utilisation de Google.</span>
-                <div className="flex justify-center">
-                  <input type="submit" value="Envoyer" className="w-32 p-2 my-4 bg-customPink text-white cursor-pointer"></input>
-                </div>
-              </div>
-            </form>
-          </div>  
-      </div>
+      <Form />
 
       <Footer/>
     </main>
