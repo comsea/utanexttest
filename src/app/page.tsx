@@ -134,7 +134,7 @@ export default function Home() {
 
       <div className="mt-8">
         <h2 className="text-customPink text-xl lg:text-2xl font-bold ml-8 lg:ml-32"> En gestion externe </h2>
-        <p className="text-black text-medium mx-8 lg:ml-32 my-4 text-justify">Nous collaborons avec des partenaires de confiance pour offrir un service le plus complet possible.</p>
+        <p className="text-black text-medium mx-8 lg:mx-32 my-4 text-justify">Nous collaborons avec des partenaires de confiance pour offrir un service le plus complet possible.</p>
 
         <div className="grid grid-rows mx-8 lg:mx-0 lg:grid-cols-[25%,15%,25%,15%] gap-4 justify-center my-4">
           <div className="bg-customGray p-4">
@@ -255,7 +255,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-8 lg:ml-32">
+      <div className="mx-8 lg:mx-32">
           <div className="flex flex-col mt-10">
               <h1 className="text-customBlue text-xl lg:text-2xl font-bold"> Nos secteurs d&apos;activité </h1>
                 <Image src={PinkLine} alt="Ligne rose"></Image>
@@ -268,7 +268,7 @@ export default function Home() {
           </div>
       </div>
 
-      <div className="mx-8 lg:ml-32 mb-10">
+      <div className="mx-8 lg:mx-32 mb-10">
           <div className="flex flex-col mt-10 items-end">
               <h1 className="text-customBlue text-xl lg:text-2xl font-bold"> Matières travaillées </h1>
                 <Image src={PinkLine} alt="Ligne rose" className=""></Image>
