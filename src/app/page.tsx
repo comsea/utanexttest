@@ -7,8 +7,6 @@ import Header from "../components/Header/Header";
 import PhotoBanner from "@/assets/images/banner_photo.svg";
 import Logo from "@/assets/images/logo.svg";
 
-import Phone from "@/assets/images/phone.svg";
-import Mail from "@/assets/images/mail.svg";
 import Building from "@/assets/images/building.svg";
 import Machine from "@/assets/images/machine.svg";
 import Piece from "@/assets/images/piece.svg";
@@ -17,15 +15,10 @@ import PinkLine from "@/assets/images/pink_line.svg";
 import MachineBanner from "@/assets/images/banner_machine.svg";
 import WhiteLine from "@/assets/images/white_line.svg";
 import NewsBanner from "@/assets/images/banner_news.svg";
-import Arrow from "@/assets/images/actus/arrow.svg";
 
 import ActusIndex from "../components/Actualites/ActusIndex";
-import Photo1 from "@/assets/images/Actus/photo1.svg";
-import Photo2 from "@/assets/images/Actus/photo2.svg";
-import Photo3 from "@/assets/images/Actus/photo3.svg";
-
-import Footer from "@/components/Footer/Footer";
-import Form from "@/components/Formulaire/Form";
+import Form from "../components/Formulaire/Form"
+import Footer from "../components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "UTA SAMG",
@@ -78,7 +71,7 @@ export default function Home() {
         <div className="lg:block hidden">
           <Image src={AboutusBanner} alt="Photo bâtiment UTA" className="w-full"></Image>
 
-            <div className="absolute w-1/3 h-full text-white top-0 ml-[55%] mt-32 justify-center">
+            <div className="absolute w-[45%] h-full text-white top-0 ml-[50%] mt-24 justify-center">
               <h1 className="text-2xl lg:text-3xl font-bold"> Qui sommes-nous ? </h1>
               <div className="flex justify-start">
                 <Image src={WhiteLine} alt="Ligne blanche"></Image>
@@ -174,7 +167,7 @@ export default function Home() {
               <Image src={WhiteLine} alt="Ligne rose"></Image>
             </div>
 
-            <div className="">
+            <div>
               <div className="mt-4 space-y-2">
                   <p className="font-bold text-sm">· 1 centre d&apos;usinage Mazak Horizontal FH 880</p>
                   <span className="text-sm">Course 1300 x 1100 x 1100</span>
@@ -214,16 +207,17 @@ export default function Home() {
             </div>
           </div> 
         </div>
+
         <div className="lg:block hidden">
         <Image src={MachineBanner} alt="Photo machine UTA" className="w-full lg:block hidden"></Image>
 
-          <div className="absolute w-3/6 h-full text-white top-0 ml-[12%] mt-28 justify-center">
+          <div className="absolute w-4/5 h-full text-white top-0 ml-[8%] mt-14 justify-center">
             <h1 className="text-3xl font-bold"> Nos machines </h1>
             <div className="flex justify-start">
               <Image src={WhiteLine} alt="Ligne rose"></Image>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-[40%_40%] gap-4">
               <div className="mt-4 space-y-2">
                   <p className="font-bold lg:text-lg">· 1 centre d&apos;usinage Mazak Horizontal FH 880</p>
                   <span className="text-md">Course 1300 x 1100 x 1100</span>
@@ -304,7 +298,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Form />
+      <Form/>
 
       <Footer/>
     </main>

@@ -22,7 +22,7 @@ export default function Header() {
                     <Image src={HeaderBlue} alt="Bord bleu"></Image>
                 </div>
 
-                <div className='flex flex-row lg:space-x-48 items-center'>
+                <div className='flex flex-row lg:space-x-24 items-center'>
                     <div className="ml-20">
                         <Image src={Logo} alt="Logo UTA SAMG" className='h-32'></Image>
                     </div>
@@ -48,7 +48,7 @@ export default function Header() {
                         </div>
                     </div>
 
-                    <button className='relative w-56 h-12 drop-shadow-xl'>
+                    <button className='relative lg:w-56 h-12 drop-shadow-xl'>
                         <Image src={Button} alt="Bouton"></Image>
                         <div className="absolute w-full h-full top-0 left-0 font-bold text-white text-2xl flex justify-center items-center">
                             <Link href="#contact">Contactez-nous !</Link>
