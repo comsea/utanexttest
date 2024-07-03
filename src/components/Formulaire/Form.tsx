@@ -36,7 +36,7 @@ const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     e.preventDefault();
     setIsSubmitting(true)
     try {
-      await axios.post('http://127.0.0.1:8000/contact', formData);
+      await axios.post('https://apiuta.comsea.fr/contact', formData);
       setResponseMessage('Message envoyé avec succès !');
     } catch (error) {
         setResponseMessage('Erreur lors de l\'envoi du message');
