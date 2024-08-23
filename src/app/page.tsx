@@ -214,21 +214,21 @@ export default function Home() {
             </div>
 
             <div>
-              <div className="mt-4 space-y-2">
-                  <p className="font-bold text-sm">· 1 centre d&apos;usinage Mazak Horizontal FH 880</p>
-                  <span className="text-sm">Course 1300 x 1100 x 1100</span>
+            <div className="mt-4 space-y-2">
+                  <p className="font-bold lg:text-lg">· 1 centre usinage Mazak Horizontal FH 880</p>
+                  <span className="text-md">Course 1300 x 1100 x 1100</span>
 
-                  <p className="font-bold text-sm">· 1 centre usinage Mazak VTC 200/C</p>
-                  <span className="text-sm">Course 1600 x 560 x 560</span>
+                  <p className="font-bold text-lg">· 1 centre usinage Mazak VTC 200/C</p>
+                  <span className="text-md">Course 1600 x 560 x 560</span>
 
-                  <p className="font-bold text-sm">· 1 centre usinage Mazak VTC 300/C</p>
-                  <span className="text-sm">Course 1760x760x660</span>
-              
-                  <p className="font-bold text-sm">· 1 Tour Mazak QT 25</p>
-                  <span className="text-sm">Ø maxi 400 entre pointe 1000</span>
+                  <p className="font-bold text-lg">· 1 centre usinage Mazak VTC 300/C</p>
+                  <span className="text-md">Course 1760x760x660</span>
 
-                  <p className="font-bold text-sm">· 1 Tour Mazak QT 35</p>
-                  <span className="text-sm">Ø maxi 400 entre pointe 1500</span>
+                  <p className="font-bold text-lg">· 1 tour Mazak QT 35</p>
+                  <span className="text-md">Ø maxi 400 entre pointe 1500</span>
+
+                  <p className="font-bold text-lg">· 1 fraiseuse à CN Forest-Liné</p>
+                  <span className="text-md">Course 6000x2000x1000</span>
               </div>
 
               <div className="my-4 drop-shadow-lg">
@@ -236,19 +236,16 @@ export default function Home() {
               </div>
 
               <div className="mt-4 space-y-2">
-                  <p className="font-bold text-sm"> · 1 centre tournage Mazak SQT 30 Axe C </p>
-                  <span className="text-sm">Outils tournants, Ø max 500 lg 1500</span>
+                  <p className="font-bold text-lg"> · 1 centre tournage Mazak SQT 30 Axe C </p>
+                  <span className="text-md">Outils tournants, Ø max 500 lg 1500</span>
 
-                  <p className="font-bold text-sm"> · 1 Tour Mazak Slant Turn 50 N </p>
-                  <span className="text-sm">Ø maxi 780 entre pointe 2000</span>
+                  <p className="font-bold text-lg"> · 1 tour Mazak Slant Turn 50 N </p>
+                  <span className="text-md">Ø maxi 780 entre pointe 3000</span>
 
-                  <p className="font-bold text-sm"> · 1 Tour Mazak Slant Turn 50 N </p>
-                  <span className="text-sm">Ø maxi 780 entre pointe 3000</span>
+                  <p className="font-bold text-lg"> · 1 tour Mazak Nexus 550 M </p>
+                  <span className="text-md">Ø maxi 900 entre pointe 3000 avec axe fraisage</span>
 
-                  <p className="font-bold text-sm"> · 1 tour Mazak Nexus 550 M </p>
-                  <span className="text-sm">Ø maxi 900 entre pointe 3000 avec axe fraisage</span>
-
-                  <p className="font-bold text-sm"> · 1 scie Kasto Ø 400 </p>
+                  <p className="font-bold text-lg"> · 1 scie Kasto Ø 400 </p>
               </div>
             </div>
           </div> 
