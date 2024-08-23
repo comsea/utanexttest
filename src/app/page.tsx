@@ -122,7 +122,12 @@ export default function Home() {
       <div className="w-full flex justify-center items-center my-8 h-[40vh]">
         <div className="w-[80%] h-full">
           <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
+          breakpoints={{
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
           spaceBetween={30}
           navigation={true}
           modules={[Navigation]}
