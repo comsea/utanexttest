@@ -126,7 +126,7 @@ export default function Home() {
           spaceBetween={30}
           navigation={true}
           modules={[Navigation]}
-          className="w-full !h-full"
+          className="w-full !h-full" 
           >
             <SwiperSlide>
               <Image src={Slide1} alt="Photo machine" className="w-full h-full object-cover"></Image>
