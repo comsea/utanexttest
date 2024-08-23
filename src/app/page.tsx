@@ -112,7 +112,7 @@ export default function Home() {
         </div>
 
         <div className="mx-8 lg:mx-32 text-justify font-medium text-base lg:text-lg justify-center space-y-4 leading-7">
-          <p>Notre savoir-faire éprouvé et notre expérience solide sont mis au service de nos clients pour répondre à leurs besoins les plus exigeants. Que ce soit à partir de plans détaillés ou de fichiers numériques, nous nous engageons à fournir des solutions sur mesure, adaptées à chaque projet.</p>
+          <p>Notre savoir-faire et notre expérience solide sont mis au service de nos clients pour répondre à leurs besoins les plus exigeants. Que ce soit à partir de plans détaillés ou de fichiers numériques, nous nous engageons à fournir des solutions sur mesure, adaptées à chaque projet.</p>
           <p>Nos moyens de production nous donnent une grande souplesse de travail et d&apos;organisation nous permettant d&apos;optimiser au mieux les délais de fabrication et les impératifs de nos clients.</p>
           <p>Notre personnel qualifié est garant de notre qualité et de la conformité de nos fabrications. L&apos;expertise et le savoir-faire que nous mettons à disposition de nos clients sont enrichis par notre approche personnalisée, exhaustive et réactive.</p>
           <p>Mais notre engagement ne s&apos;arrête pas là. Nous comprenons que chaque demande est unique, c&apos;est pourquoi nous adoptons une approche individualisée, complète et réactive pour garantir la satisfaction de nos clients.</p>
@@ -265,7 +265,7 @@ export default function Home() {
 
             <div className="grid grid-cols-[40%_40%] gap-4">
               <div className="mt-4 space-y-2">
-                  <p className="font-bold lg:text-lg">· 1 centre d&apos;usinage Mazak Horizontal FH 880</p>
+                  <p className="font-bold lg:text-lg">· 1 centre usinage Mazak Horizontal FH 880</p>
                   <span className="text-md">Course 1300 x 1100 x 1100</span>
 
                   <p className="font-bold text-lg">· 1 centre usinage Mazak VTC 200/C</p>
@@ -273,22 +273,19 @@ export default function Home() {
 
                   <p className="font-bold text-lg">· 1 centre usinage Mazak VTC 300/C</p>
                   <span className="text-md">Course 1760x760x660</span>
-              
-                  <p className="font-bold text-lg">· 1 Tour Mazak QT 25</p>
-                  <span className="text-md">Ø maxi 400 entre pointe 1000</span>
 
-                  <p className="font-bold text-lg">· 1 Tour Mazak QT 35</p>
+                  <p className="font-bold text-lg">· 1 tour Mazak QT 35</p>
                   <span className="text-md">Ø maxi 400 entre pointe 1500</span>
+
+                  <p className="font-bold text-lg">· 1 fraiseuse à CN Forest-Liné</p>
+                  <span className="text-md">Course 6000x2000x1000</span>
               </div>
 
               <div className="mt-4 space-y-2">
                   <p className="font-bold text-lg"> · 1 centre tournage Mazak SQT 30 Axe C </p>
                   <span className="text-md">Outils tournants, Ø max 500 lg 1500</span>
 
-                  <p className="font-bold text-lg"> · 1 Tour Mazak Slant Turn 50 N </p>
-                  <span className="text-md">Ø maxi 780 entre pointe 2000</span>
-
-                  <p className="font-bold text-lg"> · 1 Tour Mazak Slant Turn 50 N </p>
+                  <p className="font-bold text-lg"> · 1 tour Mazak Slant Turn 50 N </p>
                   <span className="text-md">Ø maxi 780 entre pointe 3000</span>
 
                   <p className="font-bold text-lg"> · 1 tour Mazak Nexus 550 M </p>
@@ -354,7 +351,7 @@ export default function Home() {
           </div>          
 
           <div className="text-black text-base lg:text-lg space-y-4 my-4">
-            <p>Nous sommes compétents dans le travail des super alliages tels que l&apos;inconel et le titane, offrant des performances exceptionnelles dans des conditions extrêmes, que ce soit dans l&apos;aérospatiale, l&apos;industrie pétrolière ou d&apos;autres domaines exigeants.</p>
+            <p>Nous sommes compétents dans le travail des aciers, aciers alliés, plastiques, alliages non ferreux et super alliages tels que l'inconel et le titane. Nous pouvons partir de barres ou de lopins, mais également de pièces forgées, coulées ou oxycoupées. Quel que soit votre projet, nous avons une solution à vous proposer.</p>
           </div>
       </div>
 
