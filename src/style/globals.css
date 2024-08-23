@@ -5,3 +5,10 @@
 html {
     scroll-behavior: smooth;
 }
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    color: white!important;
+    background-color: #F83545!important;
+    padding: 6px 10px;
+    font-size: large!important;
+}

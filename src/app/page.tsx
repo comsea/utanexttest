@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+'use client'
 import React, { useState } from "react"
 
 import Image from 'next/image';
@@ -9,21 +9,38 @@ import Logo from "@/assets/images/logo.svg";
 
 import Building from "@/assets/images/building.svg";
 import Machine from "@/assets/images/machine.svg";
+import Machine2 from "@/assets/images/machine2.svg";
+import Machine3 from "@/assets/images/machine3.svg";
 import Piece from "@/assets/images/piece.svg";
 import AboutusBanner from "@/assets/images/aboutus_banner.svg";
 import PinkLine from "@/assets/images/pink_line.svg";
 import MachineBanner from "@/assets/images/banner_machine.svg";
+import Pieces from "@/assets/images/pieces.jpg";
+import MachineBanner2 from "@/assets/images/banner_machine2.svg";
 import WhiteLine from "@/assets/images/white_line.svg";
 import NewsBanner from "@/assets/images/banner_news.svg";
+
+import Camion from "@/assets/images/icon/camion.svg";
+import Grue from "@/assets/images/icon/grue.svg";
+import Usine from "@/assets/images/icon/usine.svg";
+import Train from "@/assets/images/icon/train.svg";
+import Petrol from "@/assets/images/icon/petrol.svg";
+import Engrenage from "@/assets/images/icon/engrenage.svg";
+import Minage from "@/assets/images/icon/minage.svg";
+import Travaux from "@/assets/images/icon/travaux.svg";
+
+import Slide1 from "@/assets/images/slider/slide1.png";
+import Slide2 from "@/assets/images/slider/slide2.png";
+import Slide3 from "@/assets/images/slider/slide3.png";
 
 import ActusIndex from "../components/Actualites/ActusIndex";
 import Form from "../components/Formulaire/Form"
 import Footer from "../components/Footer/Footer";
 
-export const metadata: Metadata = {
-  title: "UTA SAMG",
-  description: "Site internet de l'entreprise UTA SAMG spécialisée dans la sous-traitance en mécanique générale et l'usinage en commande numérique",
-};
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
 export default function Home() {
   return (
@@ -102,6 +119,31 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="w-full flex justify-center items-center my-8 h-[40vh]">
+        <div className="w-[80%] h-full">
+          <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          navigation={true}
+          modules={[Navigation]}
+          className="w-full !h-full"
+          >
+            <SwiperSlide>
+              <Image src={Slide1} alt="Photo machine" className="w-full h-full object-cover"></Image>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={Slide2} alt="Photo machine" className="w-full h-full object-cover"></Image>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={Slide3} alt="Photo machine" className="w-full h-full object-cover"></Image>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={Machine} alt="Photo machine" className="w-full h-full object-cover"></Image>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+
       <div className="mx-8 lg:mx-32">
           <div className="flex flex-col mt-10">
               <h1 className="text-customBlue text-xl lg:text-2xl font-bold"> Nos techniques </h1>
@@ -111,10 +153,9 @@ export default function Home() {
           <p className="text-black text-justify text-medium my-4">En plus de notre offre principale, nous proposons une gamme de services complémentaires pour répondre à tous les aspects de vos projets :</p>
       </div>
 
-      <div className="">
+      <div className="flex flex-col justify-start items-start">
         <h2 className="text-customPink text-xl lg:text-2xl font-bold ml-8 lg:ml-32"> En gestion interne </h2>
-        
-          <div className="grid grid-rows mx-8 lg:mx-0 lg:grid-cols-[25%,25%,25%] gap-4 justify-center my-4">
+          <div className="w-[85%] grid mx-auto lg:grid-cols-3 gap-8 justify-center mt-4">
             <div className="bg-customGray p-4">
               <h3 className="text-lg lg:text-2xl font-bold text-customBlue">Essais non destructifs :</h3>
               <p className="text-base lg:text-lg text-justify font-medium text-black leading-6">Avec l&apos;appui d&apos;un consultant extérieur qualifié COFREN II, nous sommes en mesure de réaliser des essais non destructifs tels que magnétoscopie, ressuage et ultrasons, garantissant ainsi la qualité et la fiabilité de vos pièces.</p>
@@ -129,6 +170,11 @@ export default function Home() {
               <h3 className="text-lg lg:text-2xl font-bold text-customBlue">Montage et assemblage :</h3>
               <p className="text-base lg:text-lg text-justify font-medium text-black leading-6">Nous pouvons également prendre en charge le montage d&apos;ensembles et de sous-ensembles, offrant ainsi une solution clé en main pour vos projets les plus complexes.</p>
             </div>
+          </div>
+          <div className="w-[85%] lg:grid hidden mx-auto lg:grid-cols-3 gap-8 justify-center my-2">
+            <Image src={Machine} alt="Photo machine" className="lg:h-[35vh] w-full object-cover"></Image>
+            <Image src={Machine2} alt="Photo machine" className="lg:h-[35vh] w-full object-cover"></Image>
+            <Image src={Machine3} alt="Photo machine" className="lg:h-[35vh] w-full object-cover"></Image>
           </div>
       </div>
 
@@ -161,7 +207,7 @@ export default function Home() {
 
       <div className="relative">
         <div className="bg-customPink w-full lg:hidden block">
-          <div className="h-full text-white py-4 mx-8 justify-center">
+          <div className="h-full text-white py-4 mx-8 justify-center items-center">
             <h1 className="text-2xl font-bold"> Nos machines </h1>
             <div className="flex justify-start">
               <Image src={WhiteLine} alt="Ligne rose"></Image>
@@ -186,7 +232,7 @@ export default function Home() {
               </div>
 
               <div className="my-4 drop-shadow-lg">
-                  <Image src={Machine} alt="Photo machine"></Image>
+                  <Image src={Pieces} alt="Photo machine"></Image>
               </div>
 
               <div className="mt-4 space-y-2">
@@ -209,7 +255,7 @@ export default function Home() {
         </div>
 
         <div className="lg:block hidden">
-        <Image src={MachineBanner} alt="Photo machine UTA" className="w-full lg:block hidden"></Image>
+        <Image src={MachineBanner2} alt="Photo machine UTA" className="w-full lg:block hidden"></Image>
 
           <div className="absolute w-4/5 h-full text-white top-0 ml-[8%] mt-14 justify-center">
             <h1 className="text-3xl font-bold"> Nos machines </h1>
@@ -261,20 +307,53 @@ export default function Home() {
                 <Image src={PinkLine} alt="Ligne rose"></Image>
           </div>          
 
-          <div className="text-black text-base lg:text-lg space-y-4 text-justify my-4">
+          <div className="text-black text-base lg:text-lg space-y-4 text-justify my-4 flex flex-col justify-center items-ceeter">
             <p>Nous opérons au sein d&apos;une diversité de secteurs industriels, englobant les domaines clés tels que les poids lourds, la manutention lourde, la sidérurgie, le ferroviaire, les exploitations minières, la transmission mécanique et les freins industriels, ainsi que les travaux publics.</p>
-            <p>Cette portée étendue démontre notre capacité à répondre aux besoins variés et spécifiques de chaque secteur, grâce à notre expertise polyvalente et à notre approche adaptative.</p>
+            <div className="uppercase text-customPink font-bold grid 2xl:grid-cols-8 lg:grid-cols-4 grid-cols-2 gap-8 mx-auto text-base">
+              <div className="flex flex-col justify-start items-center text-center space-y-2">
+                <Image src={Camion} alt="Ligne rose" className="w-[70px]"></Image>
+                <p className="">Poids Lourds</p>
+              </div>
+              <div className="flex flex-col justify-start items-center text-center space-y-2">
+                <Image src={Grue} alt="Ligne rose" className="w-[70px]"></Image>
+                <p className="">Manutention Lourde</p>
+              </div>
+              <div className="flex flex-col justify-start items-center text-center space-y-2">
+                <Image src={Usine} alt="Ligne rose" className="w-[70px]"></Image>
+                <p className="">Siderurgie</p>
+              </div>
+              <div className="flex flex-col justify-start items-center text-center space-y-2">
+                <Image src={Train} alt="Ligne rose" className="w-[70px]"></Image>
+                <p className="">Ferroviaire</p>
+              </div>
+              <div className="flex flex-col justify-start items-center text-center space-y-2">
+                <Image src={Petrol} alt="Ligne rose" className="w-[70px]"></Image>
+                <p className="">Industrie Pétrolière</p>
+              </div>
+              <div className="flex flex-col justify-start items-center text-center space-y-2">
+                <Image src={Engrenage} alt="Ligne rose" className="w-[70px]"></Image>
+                <p className="">Transmission Mécanique et Freins Industriels</p>
+              </div>
+              <div className="flex flex-col justify-start items-center text-center space-y-2">
+                <Image src={Minage} alt="Ligne rose" className="w-[70px]"></Image>
+                <p className="">Exploitations Minières</p>
+              </div>
+              <div className="flex flex-col justify-start items-center text-center space-y-2">
+                <Image src={Travaux} alt="Ligne rose" className="w-[70px]"></Image>
+                <p className="">Travaux Publics</p>
+              </div>
+            </div>
             <p>Que ce soit pour fournir des pièces sur mesure pour les véhicules lourds, des solutions d&apos;usinage pour les équipements de manutention, des composants essentiels pour les infrastructures ferroviaires ou des pièces de rechange pour les machines industrielles, nous sommes équipés pour relever les défis propres à chaque secteur et offrir des solutions de qualité supérieure.</p>
           </div>
       </div>
 
       <div className="mx-8 lg:mx-32 mb-10">
-          <div className="flex flex-col mt-10 items-end">
+          <div className="flex flex-col mt-10 items-start">
               <h1 className="text-customBlue text-xl lg:text-2xl font-bold"> Matières travaillées </h1>
                 <Image src={PinkLine} alt="Ligne rose" className=""></Image>
           </div>          
 
-          <div className="text-black text-base lg:text-lg space-y-4 text-right my-4">
+          <div className="text-black text-base lg:text-lg space-y-4 my-4">
             <p>Nous sommes compétents dans le travail des super alliages tels que l&apos;inconel et le titane, offrant des performances exceptionnelles dans des conditions extrêmes, que ce soit dans l&apos;aérospatiale, l&apos;industrie pétrolière ou d&apos;autres domaines exigeants.</p>
           </div>
       </div>
