@@ -52,12 +52,12 @@ export default function Form() {
     }
 
     try {
-      await axios.post('https://apiuta.comsea.fr/contact', formData, {
+      await axios.post('https://apiuta.comsea.fr/contact', data, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       });
-      console.log(formData)
+      console.log(data)
       setResponseMessage('Message envoyé avec succès !');
     } catch (error) {
       setResponseMessage("Erreur lors de l'envoi du message");
