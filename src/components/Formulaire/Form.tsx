@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { useState , ChangeEvent, FormEvent } from 'react';
 import axios from "axios";
 
 export default function Form() {
@@ -11,25 +11,18 @@ export default function Form() {
     sujet: 'Demande de contact',
     message: '',
     validate: false,
-    file: null as File | null, // File type to handle file uploads
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [responseMessage, setResponseMessage] = useState('');
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
-  
+
     if (type === 'checkbox') {
       setFormData({
         ...formData,
         [name]: (e.target as HTMLInputElement).checked,
-      });
-    } else if (type === 'file') {
-      const target = e.target as HTMLInputElement; // Assurez-vous que TypeScript sait que c'est un HTMLInputElement
-      setFormData({
-        ...formData,
-        file: target.files ? target.files[0] : null,
       });
     } else {
       setFormData({
@@ -38,31 +31,17 @@ export default function Form() {
       });
     }
   };
-  
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    const data = new FormData();
-
-    // Append form data to FormData object
-    for (const key in formData) {
-      if (formData[key as keyof typeof formData] !== null) {
-        data.append(key, formData[key as keyof typeof formData] as string | Blob);
-      }
-    }
-
+    setIsSubmitting(true)
     try {
-      await axios.post('https://apiuta.comsea.fr/contact', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
-      console.log(formData)
+      await axios.post('https://apiuta.comsea.fr/contact', formData);
       setResponseMessage('Message envoyé avec succès !');
     } catch (error) {
-      setResponseMessage("Erreur lors de l'envoi du message");
+        setResponseMessage('Erreur lors de l\'envoi du message');
     } finally {
-      setIsSubmitting(false);
+        setIsSubmitting(false)
     }
   };
 
@@ -76,16 +55,12 @@ export default function Form() {
             </div>
 
             <div>
-              <input required type="email" name="mail" id="mail" value={formData.mail} onChange={handleChange} className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2" placeholder="Adresse mail*" />
+              <input required type="text" name="mail" id="mail" value={formData.mail} onChange={handleChange} className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2" placeholder="Adresse mail*" />
             </div>
 
             <div>
               <input type="text" name="phone" id="phone" value={formData.phone} onChange={handleChange} className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2" placeholder="Téléphone" />
             </div>
-          </div>
-
-          <div className='w-full'>
-            <input type="file" name="file" id="file" onChange={handleChange} />
           </div>
 
           <div className="w-full">
