@@ -50,6 +50,7 @@ const ActusIndex: React.FC = () => {
                             <span className="text-sm lg:text-base">{formatDate(actu.date_actu)}</span>
                             <h2 className="text-xl lg:text-2xl font-bold text-black">{parse(actu.titre_actu)}</h2>
                             <div className="line-clamp-3 h-22 text-black text-base lg:text-lg text-justify">{parse(actu.description_actu)}</div>
+                            <p className="line-clamp-3" dangerouslySetInnerHTML={{ __html: actu.description_actu }}></p>
                             <div className="card-actions justify-end">
                                 <button className="bg-customPink justify-center flex items-center p-1 lg:w-12 lg:h-12">
                                     <Link href={`/actualites/${actu.id}`}><Image src={Arrow} alt="Flèche droite" width={24} height={24} /></Link>
