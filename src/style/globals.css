@@ -12,3 +12,8 @@ html {
     padding: 6px 10px;
     font-size: large!important;
 }
+
+.court {
+    -webkit-line-clamp: 3!important;
+    overflow: hidden;
+}

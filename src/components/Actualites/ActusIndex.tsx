@@ -46,11 +46,12 @@ const ActusIndex: React.FC = () => {
                     {isLoading ? 'Chargement en cours' : actualite.map(actu => (
                     <div key={actu.id} className="card bg-customGray drop-shadow-lg w-full max-w-sm">
                         <img src={`https://apiuta.comsea.fr/build/images/${actu.photo}`} alt="Photo actualité" width={400} height={300} />
-                        <div className="card-body">
-                            <span className="text-sm lg:text-base">{formatDate(actu.date_actu)}</span>
-                            <h2 className="text-xl lg:text-2xl font-bold text-black">{parse(actu.titre_actu)}</h2>
-                            <div className="line-clamp-3 h-22 text-black text-base lg:text-lg text-justify">{parse(actu.description_actu)}</div>
-                            <p className="line-clamp-3" dangerouslySetInnerHTML={{ __html: actu.description_actu }}></p>
+                        <div className="card-body flex flex-col justify-between">
+                            <div>
+                                <span className="text-sm lg:text-base">{formatDate(actu.date_actu)}</span>
+                                <h2 className="text-xl lg:text-2xl font-bold text-black">{parse(actu.titre_actu)}</h2>
+                                <div className="h-22 text-black text-base lg:text-lg text-justify line-clamp-3">{parse(actu.description_actu)}</div>
+                            </div>
                             <div className="card-actions justify-end">
                                 <button className="bg-customPink justify-center flex items-center p-1 lg:w-12 lg:h-12">
                                     <Link href={`/actualites/${actu.id}`}><Image src={Arrow} alt="Flèche droite" width={24} height={24} /></Link>
