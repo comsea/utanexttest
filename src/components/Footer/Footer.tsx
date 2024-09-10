@@ -62,7 +62,7 @@ export default function Footer() {
                 </div>
                 <div className='flex-col lg:block hidden'>
                     <Image src={Map} alt="Map emplacement UTA"></Image>
-                    <a href="https://www.linkedin.com/company/uta-samg-08/" target='_blank'><Image src={Linkedin} alt="Lien Linkedin" className='w-[60px]'></Image></a>
+                    <a href="https://www.linkedin.com/company/uta-samg-08/" target='_blank'><Image src={Linkedin} alt="Lien Linkedin" className='w-[50px] mt-8'></Image></a>
                 </div>
             </div>
 
