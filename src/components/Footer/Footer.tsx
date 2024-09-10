@@ -5,6 +5,7 @@ import Phone from "@/assets/images/Footer/phone.svg";
 import Clock from "@/assets/images/Footer/clock.svg";
 import Location from "@/assets/images/Footer/location.svg";
 import Map from "@/assets/images/Footer/map.svg";
+import Linkedin from "@/assets/images/Footer/lnkn.png"
 
 
 export default function Footer() {
@@ -61,6 +62,7 @@ export default function Footer() {
                 </div>
                 <div className='flex-col lg:block hidden'>
                     <Image src={Map} alt="Map emplacement UTA"></Image>
+                    <a href="https://www.linkedin.com/company/uta-samg-08/" target='_blank'><Image src={Linkedin} alt="Lien Linkedin" className='w-[60px]'></Image></a>
                 </div>
             </div>
 
