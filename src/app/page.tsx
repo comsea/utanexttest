@@ -195,17 +195,17 @@ export default function Home() {
 
           <div className="bg-customGray p-4">
             <h3 className="text-lg lg:text-2xl font-bold text-customBlue">Traitements chimiques :</h3>
-            <p className="text-base font-medium text-justify text-black leading-6">Trempe, Trempe HF, Cémentation, Nitruration ...</p>
+            <p className="text-base lg:text-lg font-medium text-justify text-black leading-6">Trempe, Trempe HF, Cémentation, Nitruration ...</p>
           </div>
 
           <div className="bg-customGray p-4">
             <h3 className="text-lg lg:text-2xl font-bold text-customBlue">Traitements de surface :</h3>
-            <p className="text-base font-medium text-justify text-black leading-6">De même, nous pouvons vous proposer différents traitements de surface comme le sablage, la phosphatation, l&apos;Epoxy, Galvanisation, zingage, ainsi que des services de peinture pour répondre à vos besoins spécifiques en matière de finition.</p>
+            <p className="text-base lg:text-lg font-medium text-justify text-black leading-6">De même, nous pouvons vous proposer différents traitements de surface comme le sablage, la phosphatation, l&apos;Epoxy, Galvanisation, zingage, ainsi que des services de peinture pour répondre à vos besoins spécifiques en matière de finition.</p>
           </div>
 
           <div className="bg-customGray p-4">
             <h3 className="text-lg lg:text-2xl font-bold text-customBlue">Sous-traitance diverse :</h3>
-            <p className="text-base font-medium text-justify text-black leading-6">Taillage, engrenages, clavetage, frettage...</p>
+            <p className="text-base lg:text-lg font-medium text-justify text-black leading-6">Taillage, engrenages, clavetage, frettage...</p>
           </div>
         </div>
       </div>
