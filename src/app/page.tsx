@@ -69,7 +69,7 @@ export default function Home() {
 
       <div className="relative" id="qui-sommes-nous">
         <div className="bg-customPink w-full lg:hidden block">
-          <div className="h-full text-white justify-center mx-8 py-4">
+          <div className="h-full text-[#111111] justify-center mx-8 py-4">
               <h1 className="text-2xl lg:text-3xl font-bold"> Qui sommes-nous ? </h1>
               <div className="flex justify-start">
                 <Image src={WhiteLine} alt="Ligne blanche"></Image>
@@ -212,7 +212,7 @@ export default function Home() {
 
       <div className="relative">
         <div className="bg-customPink w-full lg:hidden block">
-          <div className="h-full text-white py-4 mx-8 justify-center items-center">
+          <div className="h-full text-[#111111] py-4 mx-8 justify-center items-center">
             <h1 className="text-2xl font-bold"> Nos machines </h1>
             <div className="flex justify-start">
               <Image src={WhiteLine} alt="Ligne rose"></Image>
