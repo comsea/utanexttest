@@ -69,7 +69,7 @@ export default function Form() {
   return (
     <div className="flex justify-center drop-shadow-lg">
       <div className="bg-customGray w-[90%] lg:w-[45%] justify-center flex py-4 lg:py-8">
-        <form onSubmit={handleSubmit} className="lg:w-[85%] flex flex-col justify-center items-center space-y-4 mt-6 mx-6 lg:ml-11">
+        <form onSubmit={handleSubmit} className="lg:w-[85%] flex flex-col justify-center items-center space-y-4 mt-6 mx-6 lg:ml-11 text-black">
           <div className="w-full grid grid-cols-2 lg:gap-x-4 gap-x-4 gap-y-4">
             <div>
               <input required type="text" name="nom" id="nom" value={formData.nom} onChange={handleChange} className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2" placeholder="Nom*" />
