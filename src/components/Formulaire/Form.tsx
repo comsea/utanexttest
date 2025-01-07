@@ -76,11 +76,11 @@ export default function Form() {
             </div>
 
             <div>
-              <input required type="email" name="mail" id="mail" value={formData.mail} onChange={handleChange} className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2" placeholder="Adresse mail*" />
+              <input required type="email" name="mail" id="mail" value={formData.mail} onChange={handleChange} className="text-sm lg:text-base placeholder-black bg-customLightGray w-full rounded py-1 px-2" placeholder="Adresse mail*" />
             </div>
 
             <div>
-              <input type="text" name="phone" id="phone" value={formData.phone} onChange={handleChange} className="text-sm lg:text-base bg-customLightGray w-full rounded py-1 px-2" placeholder="Téléphone" />
+              <input type="text" name="phone" id="phone" value={formData.phone} onChange={handleChange} className="text-sm lg:text-base placeholder-black bg-customLightGray w-full rounded py-1 px-2" placeholder="Téléphone" />
             </div>
           </div>
 
@@ -89,7 +89,7 @@ export default function Form() {
           </div>
 
           <div className="w-full">
-            <textarea required name="message" id="message" value={formData.message} onChange={handleChange} className="text-sm lg:text-base bg-customLightGray w-full h-32 rounded py-1 px-2" placeholder="Message*" />
+            <textarea required name="message" id="message" value={formData.message} onChange={handleChange} className="text-sm lg:text-base placeholder-black bg-customLightGray w-full h-32 rounded py-1 px-2" placeholder="Message*" />
           </div>
 
           <div className="w-full flex flex-row space-x-4 items-start font-semibold">
