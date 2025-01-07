@@ -69,7 +69,7 @@ export default function Home() {
 
       <div className="relative" id="qui-sommes-nous">
         <div className="bg-customPink w-full lg:hidden block">
-          <div className="h-full text-[#111111] justify-center mx-8 py-4">
+          <div className="h-full text-white justify-center mx-8 py-4">
               <h1 className="text-2xl lg:text-3xl font-bold"> Qui sommes-nous ? </h1>
               <div className="flex justify-start">
                 <Image src={WhiteLine} alt="Ligne blanche"></Image>
@@ -88,7 +88,7 @@ export default function Home() {
         <div className="lg:block hidden">
           <Image src={AboutusBanner} alt="Photo bâtiment UTA" className="w-full"></Image>
 
-            <div className="absolute w-[45%] h-full text-[#111111] top-0 ml-[50%] mt-24 justify-center">
+            <div className="absolute w-[45%] h-full text-white top-0 ml-[50%] mt-24 justify-center">
               <h1 className="text-2xl lg:text-3xl font-bold"> Qui sommes-nous ? </h1>
               <div className="flex justify-start">
                 <Image src={WhiteLine} alt="Ligne blanche"></Image>
@@ -212,7 +212,7 @@ export default function Home() {
 
       <div className="relative">
         <div className="bg-customPink w-full lg:hidden block">
-          <div className="h-full text-[#111111] py-4 mx-8 justify-center items-center">
+          <div className="h-full text-white py-4 mx-8 justify-center items-center">
             <h1 className="text-2xl font-bold"> Nos machines </h1>
             <div className="flex justify-start">
               <Image src={WhiteLine} alt="Ligne rose"></Image>
@@ -259,7 +259,7 @@ export default function Home() {
         <div className="lg:block hidden">
         <Image src={MachineBanner2} alt="Photo machine UTA" className="w-full lg:block hidden"></Image>
 
-          <div className="absolute w-4/5 h-full text-[#111111] top-0 ml-[8%] mt-14 justify-center">
+          <div className="absolute w-4/5 h-full text-white top-0 ml-[8%] mt-14 justify-center">
             <h1 className="text-3xl font-bold"> Nos machines </h1>
             <div className="flex justify-start">
               <Image src={WhiteLine} alt="Ligne rose"></Image>
@@ -360,7 +360,7 @@ export default function Home() {
       <div className="">
         <div className="relative" id="actualites">
           <Image src={NewsBanner} alt="Bannière actualités" className="" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-[#111111]">
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
             <h1 className="uppercase text-xl lg:text-2xl font-bold">Nos actualités</h1>
             <Image src={PinkLine} alt="Ligne rose" className="" />
           </div>
