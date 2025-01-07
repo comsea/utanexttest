@@ -88,7 +88,7 @@ export default function Home() {
         <div className="lg:block hidden">
           <Image src={AboutusBanner} alt="Photo bâtiment UTA" className="w-full"></Image>
 
-            <div className="absolute w-[45%] h-full text-white top-0 ml-[50%] mt-24 justify-center">
+            <div className="absolute w-[45%] h-full text-[#111111] top-0 ml-[50%] mt-24 justify-center">
               <h1 className="text-2xl lg:text-3xl font-bold"> Qui sommes-nous ? </h1>
               <div className="flex justify-start">
                 <Image src={WhiteLine} alt="Ligne blanche"></Image>
@@ -259,7 +259,7 @@ export default function Home() {
         <div className="lg:block hidden">
         <Image src={MachineBanner2} alt="Photo machine UTA" className="w-full lg:block hidden"></Image>
 
-          <div className="absolute w-4/5 h-full text-white top-0 ml-[8%] mt-14 justify-center">
+          <div className="absolute w-4/5 h-full text-[#111111] top-0 ml-[8%] mt-14 justify-center">
             <h1 className="text-3xl font-bold"> Nos machines </h1>
             <div className="flex justify-start">
               <Image src={WhiteLine} alt="Ligne rose"></Image>
@@ -360,7 +360,7 @@ export default function Home() {
       <div className="">
         <div className="relative" id="actualites">
           <Image src={NewsBanner} alt="Bannière actualités" className="" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-[#111111]">
             <h1 className="uppercase text-xl lg:text-2xl font-bold">Nos actualités</h1>
             <Image src={PinkLine} alt="Ligne rose" className="" />
           </div>
