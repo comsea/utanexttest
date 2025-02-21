@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "@/style/globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import CookieConsent from "@/components/Cookies/Cookies";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 
       <body className={inter.className}>{children}</body>
       <GoogleAnalytics gaId="G-TVT544NDVE" />
+      <CookieConsent />
     </html>
   );
 }
